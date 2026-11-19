@@ -404,5 +404,7 @@ with tab_reference:
                                "Tolerance": f"±{TOLERANCES.get(colour, '—')}%" if colour in TOLERANCES else "—",
                                "TCR (common 6th band)": f"{TEMP_COEFFICIENTS.get(colour, '—')} ppm/°C"})
     for colour in ["Gold", "Silver", "Pink"]:
-        reference_rows.append({"Colour": colour, "Digit": "—",
-                               "Multiplier": f
+        reference_rows.append({
+            "Colour": colour,
+            "Digit": "—",
+            "Multipli
